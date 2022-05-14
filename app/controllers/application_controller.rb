@@ -13,12 +13,12 @@ end
 
 include Pundit
 
-after_action :verify_autorized, except: :index, :home, unless: :skip_pundit?
-after_action :verify_policy_scoped, only: :index, :home, unless: :skip_pundit?
+# after_action :verify_autorized, except: :index, :home, unless: :skip_pundit?
+# after_action :verify_policy_scoped, only: :index, :home, unless: :skip_pundit?
 
-private
+# private
 
-def skip_pundit?
-  devise_controller? || params[:controller] =~ /(^(rails_)?admin)|(^pages$)/
- end
-end
+# def skip_pundit?
+#   devise_controller? || params[:controller] =~ /(^(rails_)?admin)|(^pages$)/
+#  end
+# end

@@ -1,0 +1,10 @@
+ <h1>Boats</h1>
+ <%= image_tag "barco 1.png", alt: "Image_tasks", width: 200 %>
+  <%= image_tag "barco 2.png", alt: "Image_tasks", width: 200 %>
+  -----------------------
+ <ul>
+  <% @boats.each do |boat|%>
+     <%= boat.name %>
+     <li><%= link_to "#{boat.name} - #{boat.price}", boat_path(boat) %></li>
+   <% end %>
+ </ul>
