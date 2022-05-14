@@ -1,0 +1,7 @@
+<h1>Boats</h1>
+ <ul>
+  <% @boats.each do |boat|%>
+     <%= boat.name %>
+    <li><%= link_to "#{boat.name} - #{boat.price}", boat_path(boat) %></li>
+   <% end %>
+ </ul>
