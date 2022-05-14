@@ -8,21 +8,15 @@ body {
   border-radius: 25px;
 }
 
-// .grid-template-columns {
-// 	grid-template-columns: 200px 200px;
+// .box-text {
+//   align-items: center;
 // }
 
-
-// .wrapper {
-//   display: grid;
-//   grid-template-columns: 200px 200px;
+// .box {
+//   float: left;
+//   justify-content: right;
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
 // }
-
-.box {
-  float: left;
-  justify-content: right;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
