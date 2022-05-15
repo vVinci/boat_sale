@@ -6,6 +6,7 @@ class BoatsController < ApplicationController
 
   def show
     @boat = Boat.find(params[:id])
+    @cart = Cart.new
   end
 
   def new
@@ -14,6 +15,7 @@ class BoatsController < ApplicationController
 
   def create
     @boat = Boat.new(boat_params)
+    @boat.user = current_user
     if @boat.save
       redirect_to boat_path(@list)
     else

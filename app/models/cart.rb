@@ -1,6 +1,6 @@
 class Cart < ApplicationRecord
   belongs_to :user
-  has_many :boats
+  belongs_to :boats
 end
 
 # fazer migração para add user_id e boat_id no medelo de cart

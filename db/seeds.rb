@@ -8,3 +8,7 @@
 
 Boat.create(name: "Black Pearl", price: 5000)
 Boat.create(name: "Titanic", price: 10_000)
+Boat.create(name: "Flying Dutch", price: 100_000)
+Boat.create(name: "Kaik", price: 1000)
+Boat.create(name: "Submarine", price: 20_000)
+Boat.create(name: "Little Boat", price: 100)
