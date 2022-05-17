@@ -6,6 +6,7 @@ class BoatsController < ApplicationController
 
   def show
     @boat = Boat.find(params[:id])
+    # logica para não criar mais carrinhos
     @cart = Cart.new
   end
 

@@ -9,6 +9,7 @@ class CartsController < ApplicationController
     @cart = Cart.new
     @cart.boats << @boat
     @cart.user = current_user
+    @cart.total_price = @boat.price
     if @cart.save
       redirect_to boat_cart_path(@boat, @cart)
     else
