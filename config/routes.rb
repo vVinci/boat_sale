@@ -3,7 +3,6 @@ Rails.application.routes.draw do
   root to: 'pages#home'
 
   resources :boats, except: [:destroy] do
-    resources :carts, only: [:new, :create]
+    resources :carts, only: [:show, :create, :destroy]
   end
-  resources :carts, only: :destroy
 end

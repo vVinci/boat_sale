@@ -6,13 +6,13 @@ class CartsController < ApplicationController
 
   def create
     @boat = Boat.find(params[:boat_id])
-    @cart = Cart.new(cart_params)
-    @cart.boat = @boat
+    @cart = Cart.new
+    @cart.boats << @boat
     @cart.user = current_user
     if @cart.save
-      redirect_to cart_path(@cart)
+      redirect_to boat_cart_path(@boat, @cart)
     else
-      render 'new'
+      redirect_to boat_path(@boat)
     end
   end
 
@@ -30,7 +30,7 @@ class CartsController < ApplicationController
 
   private
 
-  def cart_params
-    params.require(:cart).permit(:total_price, :boat_id, :user_id)
-  end
+#   def cart_params
+#     params.require(:cart).permit(:total_price, :boat_id, :user_id)
+#   end
 end
