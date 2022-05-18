@@ -1,4 +1,4 @@
-<h2> BOAT DETAILS </h2>
+<!-- <h2> BOAT DETAILS </h2>
 <h3><%= @boat.name %></h3>
 
 <p> Price: <%= @boat.price %></p>
@@ -10,4 +10,16 @@
     <%= image_tag b %>
   <% end %>
  </ul>
-<%= link_to 'Go back to all boats', boats_path %>
+<%= link_to 'Go back to all boats', boats_path %> -->
+
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon px-3">
+</div>
+
+<h2>Teste</h2>
+<%= @boat.name %>
+<%= @boat.price %>
+
+<%= simple_form_for [@boat, @cart] do |f| %>
+<%= f.submit "Add to cart"%>
+<% end %>
+
