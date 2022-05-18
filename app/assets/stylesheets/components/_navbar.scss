@@ -1,12 +1,21 @@
-.navbar-lewagon {
+.navbar {
+  background: rgba(234, 234, 234, 0.7);
   justify-content: space-between;
-  background: white;
+  text-decoration: none;
+  list-style: none;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-}
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
-}
+// .navbar-lewagon {
+//   justify-content: space-between;
+//   background: white
+// //   position: sticky;
+// }
+
+// .navbar-lewagon .navbar-collapse {
+//   flex-grow: 0;
+// }
+
+// .navbar-lewagon .navbar-brand img {
+//   width: 40px;
+// }

@@ -1,2 +1,10 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon px-3">
 </div>
+
+<h2>Teste</h2>
+<%= @boat.name %>
+<%= @boat.price %>
+
+<%= simple_form_for [@boat, @cart] do |f| %>
+<%= f.submit "Add to cart"%>
+<% end %>
