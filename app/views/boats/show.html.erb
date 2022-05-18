@@ -1,1 +1,13 @@
-<h2>Teste</h2>
+<h2> BOAT DETAILS </h2>
+<h3><%= @boat.name %></h3>
+
+<p> Price: <%= @boat.price %></p>
+
+
+<% b_photo_detail = ["Barco_1-det-1.png", "Barco_1-det-2.png", "Barco_1-det-3.png", "Barco_1-det-4.png"] %>
+ <ul>
+  <% b_photo_detail.each do |b|%>
+    <%= image_tag b %>
+  <% end %>
+ </ul>
+<%= link_to 'Go back to all boats', boats_path %>

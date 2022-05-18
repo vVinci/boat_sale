@@ -1,7 +1,45 @@
 <h1>Boats</h1>
- <ul>
-  <% @boats.each do |boat|%>
-     <%= boat.name %>
-    <li><%= link_to "#{boat.name} - #{boat.price}", boat_path(boat) %></li>
-   <% end %>
- </ul>
+<% b = ["Barco_1.png", "Barco_2.png", "Barco_3.png", "Barco_4.png", "Barco_5.png", "Barco_6.png"] %>
+
+<div class="cards">
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'Barco_1.png'%>)">
+    NHD 340
+    <div class="btn btn-ghost">
+      R$540.890,00
+    </div>
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'Barco_2.png'%>)">
+    Shaefer Yachts 620
+    <div class="btn btn-ghost">
+      R$398.900,00
+    </div>
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'Barco_3.png'%>)">
+    Coral-27A
+    <div class="btn btn-ghost">
+      R$5455.900,00
+    </div>
+  </div>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'Barco_4.png'%>)">
+   FS-290 Concept
+   <div class="btn btn-ghost">
+      R$580.900,00
+    </div>
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'Barco_5.png'%>)">
+    Real Powerboats-415
+    <div class="btn btn-ghost">
+      R$340.730,00
+    </div>
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'Barco_6.png'%>)">
+    Malibu-M220
+    <div class="btn btn-ghost">
+      R$512.000,00
+    </div>
+  </div>
+</div>
