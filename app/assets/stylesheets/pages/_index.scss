@@ -1,2 +1,22 @@
 // Import page-specific CSS files here.
 @import "home";
+
+body h1 {
+  text-align: center;
+
+}
+.comprar {
+  width: 30%;
+  height: 75%;
+  text-align: center;
+  padding: 10px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+.card-body {
+  background-color: rgb(244, 244, 244);
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+}

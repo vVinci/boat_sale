@@ -1,9 +1,77 @@
-<div class="navbar">
+<div class="container">
+  <h1>Conheça nossos barcos</h1>
+  <% b = ["Barco_1.png", "Barco_2.png", "Barco_3.png", "Barco_4.png", "Barco_5.png", "Barco_6.png"] %>
+
+  <div class="container w-1000">
+    <div class="card-group">
+      <div class="card m-3">
+        <img class="card-img-top" src="<%= image_path 'Barco_1.png'%>" alt="Card image cap">
+        <div class="card-body">
+          <div class="details">
+            <h5 class="card-title">NHD 340</h5>
+            <p class="card-text">R$5400</p>
+          </div>
+          <div class="comprar btn-primary">Comprar</div>
+        </div>
+      </div>
+      <div class="card m-3">
+        <img class="card-img-top" src="<%= image_path 'Barco_1.png'%>" alt="Card image cap">
+        <div class="card-body">
+          <div class="details">
+            <h5 class="card-title">NHD 340</h5>
+            <p class="card-text">R$5400</p>
+          </div>
+          <div class="comprar btn-primary">Comprar</div>
+        </div>
+      </div>
+    <div class="card m-3">
+        <img class="card-img-top" src="<%= image_path 'Barco_1.png'%>" alt="Card image cap">
+        <div class="card-body">
+          <div class="details">
+            <h5 class="card-title">NHD 340</h5>
+            <p class="card-text">R$5400</p>
+          </div>
+          <div class="comprar btn-primary">Comprar</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-group">
+      <div class="card m-3">
+        <img class="card-img-top" src="<%= image_path 'Barco_1.png'%>" alt="Card image cap">
+        <div class="card-body">
+          <div class="details">
+            <h5 class="card-title">NHD 340</h5>
+            <p class="card-text">R$5400</p>
+          </div>
+          <div class="comprar btn-primary">Comprar</div>
+        </div>
+      </div>
+      <div class="card m-3">
+        <img class="card-img-top" src="<%= image_path 'Barco_1.png'%>" alt="Card image cap">
+        <div class="card-body">
+          <div class="details">
+            <h5 class="card-title">NHD 340</h5>
+            <p class="card-text">R$5400</p>
+          </div>
+          <div class="comprar btn-primary">Comprar</div>
+        </div>
+      </div>
+    <div class="card m-3">
+        <img class="card-img-top" src="<%= image_path 'Barco_1.png'%>" alt="Card image cap">
+        <div class="card-body">
+          <div class="details">
+            <h5 class="card-title">NHD 340</h5>
+            <p class="card-text">R$5400</p>
+          </div>
+          <div class="comprar btn-primary">Comprar</div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
-<h1>Boats</h1>
-<% b = ["Barco_1.png", "Barco_2.png", "Barco_3.png", "Barco_4.png", "Barco_5.png", "Barco_6.png"] %>
-
+<!--
 <div class="cards">
   <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'Barco_1.png'%>)">
     NHD 340
