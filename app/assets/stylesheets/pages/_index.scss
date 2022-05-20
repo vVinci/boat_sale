@@ -6,8 +6,8 @@ body h1 {
 
 }
 .comprar {
-  width: 30%;
-  height: 75%;
+  width: 80px;
+  max-height: 40px;
   text-align: center;
   padding: 10px 10px;
   border-radius: 5px;
@@ -19,4 +19,8 @@ body h1 {
   display: flex;
   justify-content: space-between;
   justify-items: center;
+}
+
+.card-img-top {
+  // height: 180px;
 }
