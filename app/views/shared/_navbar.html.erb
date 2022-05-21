@@ -1,5 +1,15 @@
-<ul class="navbar">
-    <li><a href="boats.html">Pesquisar modelos</a></li>
+<div>
+    <ul class="navbar">
+    <li></li>
+    <li>
+      <%= link_to root_path, class: "navbar" do %>
+        <strong>Boat Sale</strong> <%= image_tag "boat_sale.png", width: 40 %>
+      <% end %>
+    </li>
+
+    <li><a href="boats.html"><strong>Pesquisar modelos</strong></a></li>
     <%# <li><a href="boats.html">Vender</a></li> %>
-    <li><a href="users/sign_in.html" class="btn-primary rounded">Login</a></li>
-</ul>
+    <li><a href="users/sign_in.html" class="btn-primary btn-login p-2">Login</a></li>
+    <li></li>
+    </ul>
+</div>
