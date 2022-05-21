@@ -2,7 +2,7 @@
   <h1>Conheça nossos barcos</h1>
   <% b = ["Barco_1.png", "Barco_2.jpeg", "Barco_3.jpeg", "Barco_4.jpeg", "Barco_5.jpeg", "Barco_6.jpeg"] %>
   <% c = Boat.all %>
-  <%= c[0].name %>
+  <%# <%= c[0].name %>
 
   <div class="container w-1000">
     <div class="card-group">
@@ -31,7 +31,7 @@
         <div class="card-body">
           <div class="details">
             <h5 class="card-title">Coral-27A</h5>
-            <p class="card-text">R$5455.900,00</p>
+            <p class="card-text">R$545.900,00</p>
           </div>
           <div class="Comprar"><%= link_to "Comprar", boat_path(c[2]), class: "btn btn-primary" %></div>
         </div>
@@ -81,39 +81,3 @@
       R$540.890,00
     </div>
   </div>
-
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'Barco_2.jpeg'%>)">
-    Shaefer Yachts 620
-    <div class="btn btn-ghost">
-      R$398.900,00
-    </div>
-  </div>
-
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'Barco_3.jpeg'%>)">
-    Coral-27A
-    <div class="btn btn-ghost">
-      R$5455.900,00
-    </div>
-  </div>
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'Barco_4.jpeg'%>)">
-   FS-290 Concept
-   <div class="btn btn-ghost">
-      R$580.900,00
-    </div>
-  </div>
-
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'Barco_5.jpeg'%>)">
-    Real Powerboats-415
-    <div class="btn btn-ghost">
-      R$340.730,00
-    </div>
-  </div>
-
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'Barco_6.jpeg'%>)">
-    Malibu-M220
-    <div class="btn btn-ghost">
-      R$512.000,00
-    </div>
-  </div>
-</div>
--->
