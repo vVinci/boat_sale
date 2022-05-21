@@ -8,9 +8,16 @@ body {
 h1 {
   font-family: 'Inter', sans-serif;
   font-size: 56px;
-  margin: 0 auto;
-  display:inline;
 }
+
+h1-2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 56px;
+  display: inline;
+  margin: 0;
+  line-height: 50px;
+}
+
 
 .img-home {
   border-radius: 25px;
