@@ -8,9 +8,11 @@
 <div class="slider">
 
 
-    <h2>NHD 340</h2>
-    <h2>R$540.890,00</h2>
-    <%= link_to "Comprar", class: "btn btn-primary" %>
+    <h2><%= @boat.name %></h2>
+    <h2><%= @boat.price %></h2>
+    <%= simple_form_for [@boat, @cart] do |f| %>
+      <%= f.submit "Reservar"%>
+    <% end %>
 <!-- boat_path(c[0]) -->
     <div class="slides">
       <input type="radio" name="radio-btn" id="radio1">
