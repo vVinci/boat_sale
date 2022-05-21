@@ -11,7 +11,7 @@
 BARCOS
 <%# <h2>Teste</h2>
 <%= @boat.name %>
-<%# <%= @boat.price %> 
+<%# <%= @boat.price %>
 
 <div class=”title”></div>
 
@@ -35,7 +35,7 @@ BARCOS
 
 </div>
 
-<div class=”quantity” >Quantidade: 
+<div class=”quantity” >Quantidade:
 
 <input value=1>
 
@@ -49,7 +49,7 @@ BARCOS
 
 
     <h2><%= @boat.name %></h2>
-    <h2><%= @boat.price %></h2>
+    <h2>R$ <%= @boat.price %></h2>
     <%= simple_form_for [@boat, @cart] do |f| %>
       <%= f.submit "Reservar"%>
     <% end %>
