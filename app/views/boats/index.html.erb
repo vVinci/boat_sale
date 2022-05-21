@@ -1,6 +1,83 @@
+
 <h1>Boats</h1>
 <% b = ["Barco_1.png", "Barco_2.png", "Barco_3.png", "Barco_4.png", "Barco_5.png", "Barco_6.png"] %>
 
+<div class="container">
+  <h1>Conheça nossos barcos</h1>
+  <% b = ["Barco_1.png", "Barco_2.jpeg", "Barco_3.jpeg", "Barco_4.jpeg", "Barco_5.jpeg", "Barco_6.jpeg"] %>
+  <% c = Boat.all %>
+  <%# <%= c[0].name %>
+
+  <div class="container w-1000">
+    <div class="card-group">
+      <div class="card m-3">
+        <img class="card-img-top" src="<%= image_path 'Barco_1.png'%>" alt="Card image cap">
+        <div class="card-body">
+          <div class="details">
+            <h5 class="card-title">NHD 340</h5>
+            <p class="card-text">R$540.890,00</p>
+          </div>
+          <div class="Comprar"><%= link_to "Comprar", boat_path(c[0]), class: "btn btn-primary" %></div>
+        </div>
+      </div>
+      <div class="card m-3">
+        <img class="card-img-top" src="<%= image_path 'Barco_2.jpeg'%>" alt="Card image cap">
+        <div class="card-body">
+          <div class="details">
+            <h5 class="card-title">Shaefer Yachts 620</h5>
+            <p class="card-text">R$398.900,00</p>
+          </div>
+          <div class="Comprar"><%= link_to "Comprar", boat_path(c[1]), class: "btn btn-primary" %></div>
+        </div>
+      </div>
+    <div class="card m-3">
+        <img class="card-img-top" src="<%= image_path 'Barco_3.jpeg'%>" alt="Card image cap">
+        <div class="card-body">
+          <div class="details">
+            <h5 class="card-title">Coral-27A</h5>
+            <p class="card-text">R$545.900,00</p>
+          </div>
+          <div class="Comprar"><%= link_to "Comprar", boat_path(c[2]), class: "btn btn-primary" %></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-group">
+      <div class="card m-3">
+        <img class="card-img-top" src="<%= image_path 'Barco_4.jpeg'%>" alt="Card image cap">
+        <div class="card-body">
+          <div class="details">
+            <h5 class="card-title">FS-290 Concept</h5>
+            <p class="card-text">R$580.900,00</p>
+          </div>
+          <div class="Comprar"><%= link_to "Comprar", boat_path(c[3]), class: "btn btn-primary" %></div>
+        </div>
+      </div>
+      <div class="card m-3">
+        <img class="card-img-top" src="<%= image_path 'Barco_5.jpeg'%>" alt="Card image cap">
+        <div class="card-body">
+          <div class="details">
+            <h5 class="card-title">Real Powerboats-415</h5>
+            <p class="card-text">R$340.730,00</p>
+          </div>
+          <div class="Comprar"><%= link_to "Comprar", boat_path(c[4]), class: "btn btn-primary" %></div>
+        </div>
+      </div>
+    <div class="card m-3">
+        <img class="card-img-top" src="<%= image_path 'Barco_6.jpeg'%>" alt="Card image cap">
+        <div class="card-body">
+          <div class="details">
+            <h5 class="card-title">Malibu-M220</h5>
+            <p class="card-text">R$512.000,00</p>
+          </div>
+          <div class="Comprar"><%= link_to "Comprar", boat_path(c[0]), class: "btn btn-primary" %></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--
 <div class="cards">
   <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'Barco_1.png'%>)">
     NHD 340
@@ -8,38 +85,3 @@
       R$540.890,00
     </div>
   </div>
-
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'Barco_2.png'%>)">
-    Shaefer Yachts 620
-    <div class="btn btn-ghost">
-      R$398.900,00
-    </div>
-  </div>
-
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'Barco_3.png'%>)">
-    Coral-27A
-    <div class="btn btn-ghost">
-      R$5455.900,00
-    </div>
-  </div>
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'Barco_4.png'%>)">
-  FS-290 Concept
-  <div class="btn btn-ghost">
-      R$580.900,00
-    </div>
-  </div>
-
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'Barco_5.png'%>)">
-    Real Powerboats-415
-    <div class="btn btn-ghost">
-      R$340.730,00
-    </div>
-  </div>
-
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'Barco_6.png'%>)">
-    Malibu-M220
-    <div class="btn btn-ghost">
-      R$512.000,00
-    </div>
-  </div>
-</div>
