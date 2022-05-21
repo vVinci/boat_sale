@@ -1,17 +1,11 @@
-<!-- <h2> BOAT DETAILS </h2>
-<h3><%= @boat.name %></h3>
+<style>
 
-<p> Price: <%= @boat.price %></p>
+</style>
 
 
-<% b_photo_detail = ["Barco_1-det-1.png", "Barco_1-det-2.png", "Barco_1-det-3.png", "Barco_1-det-4.png"] %>
- <ul>
-  <% b_photo_detail.each do |b|%>
-    <%= image_tag b %>
-  <% end %>
- </ul>
-<%= link_to 'Go back to all boats', boats_path %> -->
+</body>
 
+<!---
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon px-3">
 </div>
 BARCOS
@@ -50,8 +44,49 @@ BARCOS
 <div class=”total-price”>R$540.890,00</div>
 
 </div>
+ -->
+<div class="slider">
 
-<%= simple_form_for [@boat, @cart] do |f| %>
-<%= f.submit "Add to cart"%>
-<% end %>
 
+    <h2><%= @boat.name %></h2>
+    <h2><%= @boat.price %></h2>
+    <%= simple_form_for [@boat, @cart] do |f| %>
+      <%= f.submit "Reservar"%>
+    <% end %>
+    <div class="slides">
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
+
+      <div class="slide first">
+       <img src="<%= image_path 'Barco_1.png'%>" alt="Card image cap-1">
+      </div>
+      <div class="slide">
+        <img src="<%= image_path 'Barco_1-det-1.png'%>" alt="Card image cap-det1">
+      </div>
+      <div class="slide">
+        <img src="<%= image_path 'Barco_1-det-2.png'%>" alt="Card image cap-det2">
+      </div>
+      <div class="slide">
+        <img src="<%= image_path 'Barco_1-det-3.png'%>" alt="Card image cap-det3">
+      </div>
+
+      <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+      </div>
+
+    </div>
+    <div class="manual-navigation">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+    </div>
+ </div>
+
+  <script src="/root/code/CintiaPizzatto/boat_sale/app/javascript/script.js"></script>
+</body>

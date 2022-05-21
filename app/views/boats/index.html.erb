@@ -1,8 +1,8 @@
 <div class="container">
-  <h1>Conheça nossos barcos</h1>
+  <h1>Barcos disponíveis</h1>
   <% b = ["Barco_1.png", "Barco_2.jpeg", "Barco_3.jpeg", "Barco_4.jpeg", "Barco_5.jpeg", "Barco_6.jpeg"] %>
   <% c = Boat.all %>
-  <%= c[0].name %>
+  <%# <%= c[0].name %>
 
   <div class="container w-1000">
     <div class="card-group">
@@ -10,30 +10,30 @@
         <img class="card-img-top" src="<%= image_path 'Barco_1.png'%>" alt="Card image cap">
         <div class="card-body">
           <div class="details">
-            <h5 class="card-title">NHD 340</h5>
-            <p class="card-text">R$540.890,00</p>
+            <h5 class="card-title"><%= c[0].name %></h5>
+            <p class="card-text">R$<%= c[0].price %></p>
           </div>
-          <div class="Comprar"><%= link_to "Comprar", boat_path(c[0]), class: "btn btn-primary" %></div>
+          <div class="Comprar"><%= link_to "Reservar", boat_path(c[0]), class: "btn btn-primary" %></div>
         </div>
       </div>
       <div class="card m-3">
         <img class="card-img-top" src="<%= image_path 'Barco_2.jpeg'%>" alt="Card image cap">
         <div class="card-body">
           <div class="details">
-            <h5 class="card-title">Shaefer Yachts 620</h5>
-            <p class="card-text">R$398.900,00</p>
+            <h5 class="card-title"><%= c[1].name %></h5>
+            <p class="card-text">R$<%= c[1].price %></p>
           </div>
-          <div class="Comprar"><%= link_to "Comprar", boat_path(c[1]), class: "btn btn-primary" %></div>
+          <div class="Comprar"><%= link_to "Reservar", boat_path(c[1]), class: "btn btn-primary" %></div>
         </div>
       </div>
     <div class="card m-3">
         <img class="card-img-top" src="<%= image_path 'Barco_3.jpeg'%>" alt="Card image cap">
         <div class="card-body">
           <div class="details">
-            <h5 class="card-title">Coral-27A</h5>
-            <p class="card-text">R$5455.900,00</p>
+            <h5 class="card-title"><%= c[2].name %></h5>
+            <p class="card-text">R$<%= c[2].price %></p>
           </div>
-          <div class="Comprar"><%= link_to "Comprar", boat_path(c[2]), class: "btn btn-primary" %></div>
+          <div class="Comprar"><%= link_to "Reservar", boat_path(c[2]), class: "btn btn-primary" %></div>
         </div>
       </div>
     </div>
@@ -43,30 +43,30 @@
         <img class="card-img-top" src="<%= image_path 'Barco_4.jpeg'%>" alt="Card image cap">
         <div class="card-body">
           <div class="details">
-            <h5 class="card-title">FS-290 Concept</h5>
-            <p class="card-text">R$580.900,00</p>
+            <h5 class="card-title"><%= c[3].name %></h5>
+            <p class="card-text">R$<%= c[3].price %></p>
           </div>
-          <div class="Comprar"><%= link_to "Comprar", boat_path(c[3]), class: "btn btn-primary" %></div>
+          <div class="Comprar"><%= link_to "Reservar", boat_path(c[3]), class: "btn btn-primary" %></div>
         </div>
       </div>
       <div class="card m-3">
         <img class="card-img-top" src="<%= image_path 'Barco_5.jpeg'%>" alt="Card image cap">
         <div class="card-body">
           <div class="details">
-            <h5 class="card-title">Real Powerboats-415</h5>
-            <p class="card-text">R$340.730,00</p>
+            <h5 class="card-title"><%= c[4].name %></h5>
+            <p class="card-text">R$<%= c[4].price %></p>
           </div>
-          <div class="Comprar"><%= link_to "Comprar", boat_path(c[4]), class: "btn btn-primary" %></div>
+          <div class="Comprar"><%= link_to "Reservar", boat_path(c[4]), class: "btn btn-primary" %></div>
         </div>
       </div>
     <div class="card m-3">
         <img class="card-img-top" src="<%= image_path 'Barco_6.jpeg'%>" alt="Card image cap">
         <div class="card-body">
           <div class="details">
-            <h5 class="card-title">Malibu-M220</h5>
-            <p class="card-text">R$512.000,00</p>
+            <h5 class="card-title"><%= c[5].name %></h5>
+            <p class="card-text">R$<%= c[5].price %></p>
           </div>
-          <div class="Comprar"><%= link_to "Comprar", boat_path(c[0]), class: "btn btn-primary" %></div>
+          <div class="Comprar"><%= link_to "Reservar", boat_path(c[5]), class: "btn btn-primary" %></div>
         </div>
       </div>
     </div>
@@ -81,39 +81,3 @@
       R$540.890,00
     </div>
   </div>
-
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'Barco_2.jpeg'%>)">
-    Shaefer Yachts 620
-    <div class="btn btn-ghost">
-      R$398.900,00
-    </div>
-  </div>
-
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'Barco_3.jpeg'%>)">
-    Coral-27A
-    <div class="btn btn-ghost">
-      R$5455.900,00
-    </div>
-  </div>
-    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'Barco_4.jpeg'%>)">
-   FS-290 Concept
-   <div class="btn btn-ghost">
-      R$580.900,00
-    </div>
-  </div>
-
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'Barco_5.jpeg'%>)">
-    Real Powerboats-415
-    <div class="btn btn-ghost">
-      R$340.730,00
-    </div>
-  </div>
-
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= image_path 'Barco_6.jpeg'%>)">
-    Malibu-M220
-    <div class="btn btn-ghost">
-      R$512.000,00
-    </div>
-  </div>
-</div>
--->
