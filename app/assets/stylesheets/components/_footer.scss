@@ -3,8 +3,16 @@
   padding: 20px;
   text-decoration: none;
   list-style: none;
+  display: flex;
+  justify-content: end;
 }
+
+
 
 a {
   text-decoration: none;
+}
+
+.img-bottom {
+  margin-top: 5px;
 }
